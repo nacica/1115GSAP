@@ -1,0 +1,26 @@
+.img-1,
+.img-2,
+.img-3
+{
+    width:100%;
+    height:100vh;
+    position:absolute;
+    bottom:0;
+    left:0;
+    z-index: -10;
+}
+.img-1{
+    background:url(img/1115sora.png);
+    background-position: center;
+    background-size: cover;
+}
+.img-2{
+    background:url(img/1115kumo.png);
+    background-position: center;
+    background-size: cover;
+}
+.img-3{
+    background:url(img/1115oka.png);
+    background-position: center;
+    background-size: cover;
+}
