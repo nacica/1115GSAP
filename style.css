@@ -13,6 +13,21 @@ body{
     color: rgb(82, 78, 119);
     /* color: white; */
 }
+a{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    z-index: 4;
+    padding: 20px 15px;
+    transition:background-color 1.4s ease;
+    border-radius: 10px;
+}
+a:hover{
+    background-color: lightgrey;
+    border-radius: 10px;
+
+}
+
 
 .background{
     position: absolute;
@@ -44,7 +59,7 @@ body{
 .menu ul li{
     display: inline-block;
     margin: 2em 0;
-    padding: 0 30px;
+    padding: 0 20px;
     font-size:15px;
 }
 .cart{
@@ -63,8 +78,8 @@ body{
 }
 .tag-line{
     position: fixed;
-    top:166px;
-    left:152px;
+    top:40px;
+    left:4px;
     padding: 10px 30px;
 }
 .year{
