@@ -98,6 +98,8 @@ body{
     font-size:10px;
     z-index: 2;
 }
+
+
 button{
     position:relative;
     left:120px;
@@ -112,6 +114,7 @@ button{
     border:none;
     cursor:pointer;
     transition:.4s;
+    border-radius: 10px;
 }
 button:hover{
     background: #fff;
@@ -119,8 +122,8 @@ button:hover{
 }
 .media{
     position: absolute;
-    bottom: 220px;
-    left: 20px;
+    bottom: 295px;
+    left: -20px;
 }
 .media ul{
     position: absolute;

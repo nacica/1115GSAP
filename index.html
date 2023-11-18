@@ -17,25 +17,21 @@
 
         <div class="nav">
             <div class="logo">
-                <ion-icon name="play"></ion-icon>
+                <ion-icon class="logo_play" name="play"></ion-icon>
             </div>
             <div class="menu">
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Products</li>
-                    <li>Contact</li>
+                    <li class="menu_content">Home</li>
+                    <li class="menu_content">About</li>
+                    <li class="menu_content">Products</li>
+                    <li class="menu_content">Contact</li>
                 </ul>
             </div>
             <div class="cart">
                 <ion-icon name="cart"></ion-icon>
             </div>
         </div>
-
-        <div class="hero">
-            <img src="aaa.png" alt="" srcset="">
-        </div>
-        
+    
         <div class="blocks">
             <div class="block-1">0</div>
             <div class="block-1">1</div>
@@ -59,16 +55,16 @@
         </div>
 
         <div class="content">
-            <p> The years of youth are fleeting, and learning is challenging; do not underestimate a moment of time</p>
+            <!-- <p> The years of youth are fleeting, </br>and learning is challenging; do not underestimate a moment of time</p> -->
             <button>Shop Now</button>    
         </div>
 
         <div class="media">
             <ul>
-                <li><ion-icon name="logo-facebook"></ion-icon></li>
-                <li><ion-icon name="logo-instagram"></ion-icon></li>
-                <li><ion-icon name="logo-twitter"></ion-icon></li>
-                <li><ion-icon name="logo-youtube"></ion-icon></li>
+                <li><ion-icon class="logo_media" name="logo-facebook" style="font-size: 35px; color: rgb(66, 103, 178);"></ion-icon></li>
+                <li><ion-icon class="logo_media" name="logo-instagram" style="font-size: 33px; border-radius:30%; background-image: linear-gradient(90deg, rgba(248, 15, 15, 1), rgba(207, 63, 245, 1));"></ion-icon></li>
+                <li><ion-icon class="logo_media" name="logo-twitter" style="font-size: 35px; color: rgb(29, 161, 242);"></ion-icon></li>
+                <li><ion-icon class="logo_media" name="logo-youtube" style="font-size: 35px; color: red;"></ion-icon></li>
             </ul>
         </div>
     </div>
@@ -92,9 +88,9 @@
     </div>
 
     <script>
-        gsap.from('.img-1',4.9,{opacity:0, y:150, delay:0.3, ease:Expo.easeInOut})
-        gsap.from('.img-2',1.2,{opacity:0, y:-250, delay:0.3})
-        gsap.from('.img-3',1.2,{opacity:0, y:-150, delay:1.1})
+        gsap.from('.img-1',3.9,{opacity:0, y:550, delay:0.1, ease:Expo.easeInOut})
+        gsap.from('.img-2',1.2,{opacity:0, y:-250, delay:2.2})
+        gsap.from('.img-3',1.2,{opacity:0, y:150, delay:2.5})
         gsap.from('.img-4',27.2,{opacity:0, x:-150, delay:1.7})
         gsap.from('.img-5',19.2,{opacity:0, x:350, delay:1.9})
         gsap.from('.img-6',25.2,{opacity:0, x:150, delay:2.1})
@@ -107,10 +103,21 @@
         gsap.from('.img-13',4.2,{opacity:0, y:50, delay:1.5})
         gsap.from('.img-14',4.2,{opacity:0, y:50, delay:1.7})
 
-        gsap.from('.nav',1.2,{opacity:0, y:50, delay:2.7})
-        gsap.from('.blocks',1.2,{opacity:0, x:50, delay:1.0})
-        gsap.from('.tag-line',1.2,{opacity:0, x:50, delay:3.7})
-        TweenMax.staggerFrom('.title-item',5,{opacity:0,y:"100", delay:1.7,ease:Elastic.easeOut.config(0.7,0.4)},0.15)
+        // gsap.from('.nav',1.2,{opacity:0, y:50, delay:2.7})
+
+
+        
+
+        gsap.from('.logo_play',4.2,{opacity:0, x:-50, delay:2.5,ease:Elastic.easeOut.config(0.7,0.4)},0.18)
+        gsap.from('.cart',4.2,{opacity:0, x:50, delay:3.5,ease:Elastic.easeOut.config(0.7,0.4)},0.18)
+        gsap.from('.blocks',3.2,{opacity:0, x:250, delay:1.5,})
+        gsap.from('.tag-line',1.2,{opacity:0, x:-50, delay:3.7})
+        TweenMax.staggerFrom('.menu_content',5,{opacity:0,y:"100", delay:3.0,ease:Elastic.easeOut.config(0.7,0.4)},0.18)
+        TweenMax.staggerFrom('.title-item',5,{opacity:0,y:"100", delay:3.0,ease:Elastic.easeOut.config(0.7,0.4)},0.18)
+        TweenMax.staggerFrom('.logo_media',5,{opacity:0,x:"-100", delay:3.0,ease:Elastic.easeOut.config(0.7,0.4)},0.18)
+        TweenMax.staggerFrom('.content',5,{opacity:0,x:"100", delay:4.0,ease:Elastic.easeOut.config(0.7,0.4)})
+        TweenMax.staggerFrom('.year',5,{opacity:0,x:"100", delay:3.0,ease:Elastic.easeOut.config(0.7,0.4)},0.18)
+
 
     </script>
 
