@@ -8,6 +8,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
     <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" /> -->
 </head>
@@ -36,12 +37,20 @@
                 </div>
 
            </div>
-            <!-- <div class="cart">
-                <ion-icon name="cart"></ion-icon>
-            </div> -->
+
         </div>
     
         <div class="tag-line">
+            <h1>I'm a <span class="multiple-text"></span> </h1>
+
+
+
+
+
+
+
+
+
             <span>follow your stroke<br>every time</span>
         </div>
 
@@ -71,6 +80,9 @@
                 <li><ion-icon class="logo_media" name="logo-youtube" style="font-size: 35px; color: red;"></ion-icon></li>
             </ul>
         </div>
+
+
+        
     </div>
 
     <div class="images">
@@ -125,6 +137,20 @@
 
 
     </script>
+
+    <script>
+        var typed = new Typed('.multiple-text', {
+          strings: ['Frontend Developer.', 'Motion graphicer.','Photographer.','Frontend Developer.', 'Motion graphicer.','Photographer.'],
+          typeSpeed: 40,
+        backSpeed:80,
+        backDelay:500,
+        loop:true,
+        smartBackspace: true,
+        startDelay: 2000
+        });
+      </script>
+    
+
 
 </body>
 </html>
