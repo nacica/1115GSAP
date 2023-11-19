@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style01.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
     <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
@@ -21,15 +21,24 @@
             </div> -->
             <div class="menu">
                 <ul>
-                    <li class="menu_content"><a href="#">Home</a></li>
-                    <li class="menu_content"><a href="#">About</a></li>
-                    <li class="menu_content"><a href="#">Products</a></li>
-                    <li class="menu_content"><a href="#">Contact</a></li>
+                    <li class="menu_content"><a class="hoverWhite" href="#">Home</a></li>
+                    <li class="menu_content"><a class="hoverWhite" href="#">About</a></li>
+                    <li class="menu_content"><a class="hoverWhite" href="#">Products</a></li>
+                    <li class="menu_content"><a class="hoverWhite" href="#">Contact</a></li>
                 </ul>
-            </div>
-            <div class="cart">
+                
+                <div class="menu_content burger_menu">
+                    <a href="#">
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                    </a>
+                </div>
+
+           </div>
+            <!-- <div class="cart">
                 <ion-icon name="cart"></ion-icon>
-            </div>
+            </div> -->
         </div>
     
         <div class="tag-line">
@@ -98,20 +107,21 @@
         gsap.from('.img-13',4.2,{opacity:0, y:50, delay:1.5})
         gsap.from('.img-14',4.2,{opacity:0, y:50, delay:1.7})
 
-        // gsap.from('.nav',1.2,{opacity:0, y:50, delay:2.7})
-
-
-        
-
-        gsap.from('.logo_play',4.2,{opacity:0, x:-50, delay:2.5,ease:Elastic.easeOut.config(0.7,0.4)},0.18)
-        gsap.from('.cart',4.2,{opacity:0, x:50, delay:3.5,ease:Elastic.easeOut.config(0.7,0.4)},0.18)
-        gsap.from('.blocks',3.2,{opacity:0, x:250, delay:1.5,})
         gsap.from('.tag-line',1.2,{opacity:0, x:-50, delay:3.7})
         TweenMax.staggerFrom('.menu_content',5,{opacity:0,y:"100", delay:3.0,ease:Elastic.easeOut.config(0.7,0.4)},0.18)
         TweenMax.staggerFrom('.title-item',5,{opacity:0,y:"100", delay:3.0,ease:Elastic.easeOut.config(0.7,0.4)},0.18)
         TweenMax.staggerFrom('.logo_media',5,{opacity:0,x:"-100", delay:3.0,ease:Elastic.easeOut.config(0.7,0.4)},0.18)
         TweenMax.staggerFrom('.content',5,{opacity:0,x:"100", delay:4.0,ease:Elastic.easeOut.config(0.7,0.4)})
         TweenMax.staggerFrom('.year',5,{opacity:0,x:"100", delay:3.0,ease:Elastic.easeOut.config(0.7,0.4)},0.18)
+
+        const burger_menu =document.querySelector('.burger_menu');
+        const menu =document.querySelector('.menu');
+
+        burger_menu.onclick = function(){
+            console.log('hello');
+            menu.classList.toggle('active');
+        }
+
 
 
     </script>
