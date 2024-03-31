@@ -3,29 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ポートフォリオサイト</title>
     <link rel="stylesheet" href="style01.css">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
     <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" /> -->
 </head>
 <body>
-    <div class="container">
+    <div class="top_container" id="top_container">
         <div class="background"></div>
 
-        <div class="nav">
-            <!-- <div class="logo">
+        <!-- <div class="nav">
+             <div class="logo">
                 <a href="#"><ion-icon class="logo_play" name="play"></ion-icon></a>
-            </div> -->
+            </div> 
             <div class="menu">
-                <ul>
-                    <li class="menu_content"><a class="hoverWhite" href="#">Home</a></li>
-                    <li class="menu_content"><a class="hoverWhite" href="#">About</a></li>
-                    <li class="menu_content"><a class="hoverWhite" href="#">Products</a></li>
-                    <li class="menu_content"><a class="hoverWhite" href="#">Contact</a></li>
+                <ul id="page-link">
+                    <li class="menu_content"><a class="hoverWhite" href="#kakeibo">work-01<br>家計簿アプリ</a></li>
+                    <li class="menu_content"><a class="hoverWhite" href="#ec">work-02<br>E-book EC</a></li>
+                    <li class="menu_content"><a class="hoverWhite" href="#microcms">work-03<br>MicroCMS CI/CD</a></li> 
+                    <li class="menu_content"><a class="hoverWhite" href="#todolist">work-04<br>todoリスト</a></li>
                 </ul>
                 
                 <div class="menu_content burger_menu">
@@ -35,42 +36,38 @@
                        <span></span>
                     </a>
                 </div>
-
            </div>
-
-        </div>
+        </div> -->
     
         <div class="tag-line">
-            <h1>I'm a <span class="multiple-text"></span> </h1>
-
-
-
-
-
-
-
-
+            <h1>I created a <span class="multiple-text"></span> </h1>
 
             <span>follow your stroke<br>every time</span>
         </div>
 
-        <div class="year">2023</div>
-
-        <div class="title">
+        <div class="title title-top">
             <div class="title-container">
-                <div class="title-item">S</div>
-                <div class="title-item">T</div>
-                <div class="title-item">R</div>
-                <div class="title-item">O</div>
-                <div class="title-item">K</div>
-                <div class="title-item">E</div>
+                <div class="title-item">P</div>
+                <div class="title-item">o</div>
+                <div class="title-item">r</div>
+                <div class="title-item">t</div>
+                <div class="title-item">f</div>
+                <div class="title-item">o</div>
+                <div class="title-item">l</div>
+                <div class="title-item">i</div>
+                <div class="title-item">o</div>
             </div>
         </div>
 
-        <div class="content">
-            <!-- <p> The years of youth are fleeting, </br>and learning is challenging; do not underestimate a moment of time</p> -->
-            <button>Shop Now</button>    
+        <div class="arrow">
+            <img src="img/arrow.png" alt="" srcset="">
         </div>
+
+        <!-- <div class="content">
+            
+             <p> The years of youth are fleeting, </br>and learning is challenging; do not underestimate a moment of time</p>
+            <button>Shop Now</button>    
+        </div> -->
 
         <div class="media">
             <ul>
@@ -79,10 +76,7 @@
                 <li><ion-icon class="logo_media" name="logo-twitter" style="font-size: 35px; color: rgb(29, 161, 242);"></ion-icon></li>
                 <li><ion-icon class="logo_media" name="logo-youtube" style="font-size: 35px; color: red;"></ion-icon></li>
             </ul>
-        </div>
-
-
-        
+        </div>       
     </div>
 
     <div class="images">
@@ -103,54 +97,246 @@
 
     </div>
 
-    <script>
-        gsap.from('.img-1',3.9,{opacity:0, y:550, delay:0.1, ease:Expo.easeInOut})
-        gsap.from('.img-2',1.2,{opacity:0, y:-250, delay:2.2})
-        gsap.from('.img-3',1.2,{opacity:0, y:150, delay:2.5})
-        gsap.from('.img-4',27.2,{opacity:0, x:-150, delay:1.7})
-        gsap.from('.img-5',19.2,{opacity:0, x:350, delay:1.9})
-        gsap.from('.img-6',25.2,{opacity:0, x:150, delay:2.1})
-        gsap.from('.img-7',3.2,{opacity:0, y:50, delay:2.9})
-        gsap.from('.img-8',4.2,{opacity:0, y:50, delay:3.1})
-        gsap.from('.img-9',2.2,{opacity:0, y:50, delay:2.3})
-        gsap.from('.img-10',2.2,{opacity:0, y:50, delay:1.9})
-        gsap.from('.img-11',2.2,{opacity:0, y:50, delay:1.3})
-        gsap.from('.img-12',5.2,{opacity:0, y:50, delay:1.5})
-        gsap.from('.img-13',4.2,{opacity:0, y:50, delay:1.5})
-        gsap.from('.img-14',4.2,{opacity:0, y:50, delay:1.7})
 
-        gsap.from('.tag-line',1.2,{opacity:0, x:-50, delay:3.7})
-        TweenMax.staggerFrom('.menu_content',5,{opacity:0,y:"100", delay:3.0,ease:Elastic.easeOut.config(0.7,0.4)},0.18)
-        TweenMax.staggerFrom('.title-item',5,{opacity:0,y:"100", delay:3.0,ease:Elastic.easeOut.config(0.7,0.4)},0.18)
-        TweenMax.staggerFrom('.logo_media',5,{opacity:0,x:"-100", delay:3.0,ease:Elastic.easeOut.config(0.7,0.4)},0.18)
-        TweenMax.staggerFrom('.content',5,{opacity:0,x:"100", delay:4.0,ease:Elastic.easeOut.config(0.7,0.4)})
-        TweenMax.staggerFrom('.year',5,{opacity:0,x:"100", delay:3.0,ease:Elastic.easeOut.config(0.7,0.4)},0.18)
-
-        const burger_menu =document.querySelector('.burger_menu');
-        const menu =document.querySelector('.menu');
-
-        burger_menu.onclick = function(){
-            console.log('hello');
-            menu.classList.toggle('active');
-        }
-
-
-
-    </script>
-
-    <script>
-        var typed = new Typed('.multiple-text', {
-          strings: ['Frontend Developer.', 'Motion graphicer.','Photographer.','Frontend Developer.', 'Motion graphicer.','Photographer.'],
-          typeSpeed: 40,
-        backSpeed:80,
-        backDelay:500,
-        loop:true,
-        smartBackspace: true,
-        startDelay: 2000
-        });
-      </script>
+<!-- section -->
     
+    <section class="section01">
+        <div class="container">
+            <div class="left-side">
+                <div class="title title-left">
+                    <h1>家計簿アプリケーション </h1>
+                </div>
+                <div class="main-content">                  
+                    <div class="Brand-logo Brand-logo01">
+                        <div class="logo-left">
+                            <img class="React-logo" src="img/React.png">
+                            <img class="Typescript-logo" src="img/ts-logo.png">
+                            <img class="Firebase-logo" src="img/Firebase.png">
+                        </div>
+                        <div class="logo-right">
+                            <img class="AWS-logo" src="img/AWS.png">
+                            <img class="AWS-amplify-logo" src="img/aws-amplify.png">
+                            <img class="materialui-logo" src="img/material-ui.png">
+                        </div>
+                    </div>
+                
+                    <div class="right-side img-right01">
+                        <a href="https://main.d183b1ry3ppd8d.amplifyapp.com/">
+                            <img src="./img/kakeibo.png" alt="" class="work-img glow image">
+                        </a>
+                    </div>
+                
+                </div>
+                <div class="bottom-button-wrap">
+                    <div class="bottom-button">
+                        <div class="button button-left01">
+                            構成図
+                            <!-- <a href="https://main.d183b1ry3ppd8d.amplifyapp.com/">know more</a> -->
+                        </div>
+                        <div class="button button-right01">
+                            <a href="https://main.d183b1ry3ppd8d.amplifyapp.com/">アプリを見る</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="section02">
+        <div class="container">
+            <div class="left-side">
+                <div class="title title-left">
+                    <h1>電子書籍販売<br>webアプリ</h1>
+                </div>
+                <div class="main-content">                  
+                    <div class="Brand-logo Brand-logo02">
+                        <div class="logo-left">
+                            <img class="next-logo" src="img/nextjs.png">
+                            <img class="Typescript-logo" src="img/ts-logo.png">
+                            <img class="prisma-logo" src="img/prisma.png">
+                            <img class="nextauth-logo" src="img/NextAuth.png">
+                        </div>
+                        <div class="logo-right">
+                            <img class="microcms-logo" src="img/microcms.png">
+                            <img class="stripe-logo" src="img/stripe.png">
+                            <img class="vercel-logo" src="img/Vercel.png">
+                        </div>
+                    </div>
+                
+                    <div class="right-side img-right02">
+                        <a href="1231e-book-ec.vercel.app/">
+                            <img src="./img/ebook.png" alt="" class="work-img glow image">
+                        </a>
+
+                    </div>
+                
+                </div>
+                <div class="bottom-button-wrap">
+                    <div class="bottom-button">
+                        <div class="button button-left02">
+                            構成図
+                            <!-- <a href="https://main.d183b1ry3ppd8d.amplifyapp.com/">know more</a> -->
+                        </div>
+                        <div class="button button-right02">
+                            <a href="https://1231ebook-vercel.vercel.app">アプリを見る</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section03">
+        <div class="container">
+            <div class="left-side">
+                <div class="title title-left">
+                    <h1>microCMS　CI/CD　メモアプリ </h1>
+                </div>
+                <div class="main-content">                  
+                    <div class="Brand-logo Brand-logo03">
+                        <div class="logo-left">
+                            <img class="next-logo" src="img/nextjs.png">
+                            <img class="Typescript-logo" src="img/ts-logo.png">
+                            <img class="cloudflont-logo" src="img/cloudfront.png">
+                        </div>
+                        <div class="logo-right">
+                            <img class="s3-logo" src="img/s3.png">
+                            <img class="github-actions-logo" src="img/github-actions.png">
+                            <img class="microcms-logo02" src="img/microcms.png">
+                        </div>
+                    </div>
+                
+                    <div class="right-side img-right03">
+                        <a href="https://d1m5yn2pohqr6m.cloudfront.net/">
+                            <img src="./img/micro.png" alt="" class="work-img glow image">
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="bottom-button-wrap">
+                    <div class="bottom-button">
+                        <div class="button button-left03">
+                            構成図
+                            <!-- <a href="https://main.d183b1ry3ppd8d.amplifyapp.com/">know more</a> -->
+                        </div>
+                        <div class="button button-right03">
+                            <a href="https://d1m5yn2pohqr6m.cloudfront.net/">アプリを見る</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section04" id="todolist">
+        <div class="container">
+            <div class="left-side">
+                <div class="title title-left">
+                    <h1>Todoリスト</h1>
+                </div>
+                <div class="main-content">                  
+                    <div class="Brand-logo Brand-logo04">
+                        <div class="logo-left">
+                            <img class="next-logo" src="img/nextjs.png">
+                            <img class="Typescript-logo" src="img/ts-logo.png">
+                            <!-- <img class="nodejs-logo" src="img/nodejs-logo.svg"> -->
+                            <img class="express-logo" src="img/express-logo.png">
+                        </div>
+                        <div class="logo-right">
+                            <img class="prisma-logo02" src="img/prisma.png">
+                            <img class="AWS-amplify-logo" src="img/aws-amplify.png">
+                            <img class="apprunner-logo" src="img/apprunner-logo.png">
+                        </div>
+                    </div>
+                
+                    <div class="right-side img-right04">
+                        <a href="https://main.d12r73w1woavqp.amplifyapp.com/">
+                            <img src="./img/todolist.png" alt="" class="work-img glow image">
+                        </a>
+                    </div>
+                
+                </div>
+                <div class="bottom-button-wrap">
+                    <div class="bottom-button">
+                        <div class="button button-left04">
+                            構成図
+                            <!-- <a href="https://main.d183b1ry3ppd8d.amplifyapp.com/">know more</a> -->
+                        </div>
+                        <div class="button button-right04">
+                            <a href="https://main.d12r73w1woavqp.amplifyapp.com/">アプリを見る</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="footer">
+        <div class="bottom-button">
+            <div class="button-totop">
+                <a href="#top_container">TOPへ</a>
+                
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    
+    <!-- <section>
+        <div class="container">
+            <div class="left-side">
+                <img src="./img/star.png" class="star-s4 star" alt="">
+                <div class="title">
+                    <h1>3 direction</h1>
+                    <h2>Choose your gold</h2>
+                </div>
+            </div>
+            <div class="right-side">
+                <p>
+                    The fineness of gold depends on the amount of ligature - additional metals. 
+                    For example, yellow gold 585* is a metal with the addition 
+                    of 28% silver and 113.5% copper.
+                </p>
+
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card card-1">
+                <div class="rotation">
+                    <img src="./img/card-1.png" alt="" class="img-card image">
+                </div>
+                <div class="color">yellow</div>
+                <span>585 standard gold</span>
+            </div>
+            <div class="card card-2">
+                <div class="rotation">
+                    <img src="./img/card-2.png" alt="" class="img-card image">
+                </div>
+                <div class="color">white</div>
+                <span>585 standard gold</span>
+            </div>
+            <div class="card card-3">
+                <div class="rotation">
+                    <img src="./img/card-3.png" alt="" class="img-card image">
+                </div>
+                <div class="color">pink</div>
+                <span>750 standard gold</span>
+            </div>
+        </div>
+    </section> -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 
 </body>
+<script src="script.js"></script>
+
 </html>
