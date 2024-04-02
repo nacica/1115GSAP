@@ -1,12 +1,4 @@
 
-// $('#page-link a[href*="#"]').click(function () {
-//     const elmHash = $(this).attr('href'); // クリックされたリンクのhref属性から、リンク先のセクションのIDを取得
-//     const targetSection = $(elmHash);
-//     const offset = -200; // 追加するオフセット値
-//     const pos = targetSection.offset().top + offset;  // リンク先のセクションの上端からの位置にオフセットを加算
-//     $('body,html').animate({scrollTop: pos}, 2500); // ページを指定された位置までスムーズにスクロールする
-//     return false; // デフォルトのクリックイベントをキャンセルし、ページ遷移を防止
-// });
 
     // TOPへリンクがクリックされた時の処理
     $('a[href="#top_container"]').on('click', function(event) {
@@ -18,12 +10,10 @@
         }, 5000, 'easeOutExpo');
     });
 
-
-
-
-
-    
-
+TweenMax.staggerFrom('.menu_content',5,{opacity:0,y:"100", delay:3.0,ease:Elastic.easeOut.config(0.7,0.4)},0.18)
+TweenMax.staggerFrom('.title-item',5,{opacity:0,y:"100", delay:3.0,ease:Elastic.easeOut.config(0.7,0.4)},0.18)
+TweenMax.staggerFrom('.logo_media',5,{opacity:0,x:"-100", delay:3.0,ease:Elastic.easeOut.config(0.7,0.4)},0.18)
+TweenMax.staggerFrom('.content',5,{opacity:0,x:"100", delay:4.0,ease:Elastic.easeOut.config(0.7,0.4)})
 
 
 gsap.registerPlugin(ScrollTrigger)
@@ -618,11 +608,6 @@ gsap.from('.img-14',4.2,{opacity:0, y:50, delay:1.7})
 gsap.from('.tag-line',1.2,{opacity:0, x:-50, delay:3.7})
 gsap.from('.arrow',{opacity:0, delay:5.5})
 
-TweenMax.staggerFrom('.menu_content',5,{opacity:0,y:"100", delay:3.0,ease:Elastic.easeOut.config(0.7,0.4)},0.18)
-TweenMax.staggerFrom('.title-item',5,{opacity:0,y:"100", delay:3.0,ease:Elastic.easeOut.config(0.7,0.4)},0.18)
-TweenMax.staggerFrom('.logo_media',5,{opacity:0,x:"-100", delay:3.0,ease:Elastic.easeOut.config(0.7,0.4)},0.18)
-TweenMax.staggerFrom('.content',5,{opacity:0,x:"100", delay:4.0,ease:Elastic.easeOut.config(0.7,0.4)})
-TweenMax.staggerFrom('.year',5,{opacity:0,x:"100", delay:3.0,ease:Elastic.easeOut.config(0.7,0.4)},0.18)
 
 const burger_menu =document.querySelector('.burger_menu');
 const menu =document.querySelector('.menu');

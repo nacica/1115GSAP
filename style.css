@@ -82,13 +82,6 @@ a:hover{
     left:4px;
     padding: 10px 30px;
 }
-.year{
-    position:fixed;
-    top:556px;
-    left:152px;
-    padding: 10px 30px;
-    font-weight: bolder;
-}
 .title{
     position: absolute;
     right: 15%;
