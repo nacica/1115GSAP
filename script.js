@@ -101,272 +101,55 @@ gsap.utils.toArray('.Brand-logo04').forEach(logo=>{
     })
 })
 
-gsap.utils.toArray('.React-logo').forEach(title=>{
-    gsap.fromTo(title,{
-        opacity:0,
-        x:-300,
-        skewX:65
-    },{
-        opacity:1,
-        x:0,
-        skewX:0,
-        duration:1,
-        delay:.5,
-        scrollTrigger:title
-    })
-})
-gsap.utils.toArray('.Typescript-logo').forEach(title=>{
-    gsap.fromTo(title,{
-        opacity:0,
-        x:-300,
-        skewX:65
-    },{
-        opacity:1,
-        x:0,
-        skewX:0,
-        duration:1,
-        delay:.7,
-        scrollTrigger:title
-    })
-})
-gsap.utils.toArray('.Firebase-logo').forEach(title=>{
-    gsap.fromTo(title,{
-        opacity:0,
-        x:-300,
-        skewX:65
-    },{
-        opacity:1,
-        x:0,
-        skewX:0,
-        duration:1,
-        delay:.9,
-        scrollTrigger:title
-    })
-})
-gsap.utils.toArray('.AWS-logo').forEach(title=>{
-    gsap.fromTo(title,{
-        opacity:0,
-        x:-300,
-        skewX:65
-    },{
-        opacity:1,
-        x:0,
-        skewX:0,
-        duration:1,
-        delay:1.1,
-        scrollTrigger:title
-    })
-})
-gsap.utils.toArray('.AWS-amplify-logo').forEach(title=>{
-    gsap.fromTo(title,{
-        opacity:0,
-        x:-300,
-        skewX:65
-    },{
-        opacity:1,
-        x:0,
-        skewX:0,
-        duration:1,
-        delay:1.15,
-        scrollTrigger:title
-    })
-})
-gsap.utils.toArray('.materialui-logo').forEach(title=>{
-    gsap.fromTo(title,{
-        opacity:0,
-        x:-300,
-        skewX:65
-    },{
-        opacity:1,
-        x:0,
-        skewX:0,
-        duration:1,
-        delay:1.2,
-        scrollTrigger:title
-    })
-})
-gsap.utils.toArray('.next-logo').forEach(title=>{
-    gsap.fromTo(title,{
-        opacity:0,
-        x:-300,
-        skewX:65
-    },{
-        opacity:1,
-        x:0,
-        skewX:0,
-        duration:1,
-        delay:0.5,
-        scrollTrigger:title
-    })
-})
-gsap.utils.toArray('.prisma-logo').forEach(title=>{
-    gsap.fromTo(title,{
-        opacity:0,
-        x:-300,
-        skewX:65
-    },{
-        opacity:1,
-        x:0,
-        skewX:0,
-        duration:1,
-        delay:0.9,
-        scrollTrigger:title
-    })
-})
-gsap.utils.toArray('.nextauth-logo').forEach(title=>{
-    gsap.fromTo(title,{
-        opacity:0,
-        x:-300,
-        skewX:65
-    },{
-        opacity:1,
-        x:0,
-        skewX:0,
-        duration:1,
-        delay:1.0,
-        scrollTrigger:title
-    })
-})
-gsap.utils.toArray('.microcms-logo').forEach(title=>{
-    gsap.fromTo(title,{
-        opacity:0,
-        x:-300,
-        skewX:65
-    },{
-        opacity:1,
-        x:0,
-        skewX:0,
-        duration:1,
-        delay:1.2,
-        scrollTrigger:title
-    })
-})
-gsap.utils.toArray('.stripe-logo').forEach(title=>{
-    gsap.fromTo(title,{
-        opacity:0,
-        x:-300,
-        skewX:65
-    },{
-        opacity:1,
-        x:0,
-        skewX:0,
-        duration:1,
-        delay:1.4,
-        scrollTrigger:title
-    })
-})
-gsap.utils.toArray('.vercel-logo').forEach(title=>{
-    gsap.fromTo(title,{
-        opacity:0,
-        x:-300,
-        skewX:65
-    },{
-        opacity:1,
-        x:0,
-        skewX:0,
-        duration:1,
-        delay:1.6,
-        scrollTrigger:title
-    })
-})
-gsap.utils.toArray('.cloudflont-logo').forEach(title=>{
-    gsap.fromTo(title,{
-        opacity:0,
-        x:-300,
-        skewX:65
-    },{
-        opacity:1,
-        x:0,
-        skewX:0,
-        duration:1,
-        delay:0.9,
-        scrollTrigger:title
-    })
-})
-gsap.utils.toArray('.s3-logo').forEach(title=>{
-    gsap.fromTo(title,{
-        opacity:0,
-        x:-300,
-        skewX:65
-    },{
-        opacity:1,
-        x:0,
-        skewX:0,
-        duration:1,
-        delay:1.2,
-        scrollTrigger:title
-    })
-})
-gsap.utils.toArray('.github-actions-logo').forEach(title=>{
-    gsap.fromTo(title,{
-        opacity:0,
-        x:-300,
-        skewX:65
-    },{
-        opacity:1,
-        x:0,
-        skewX:0,
-        duration:1,
-        delay:1.4,
-        scrollTrigger:title
-    })
-})
-gsap.utils.toArray('.microcms-logo02').forEach(title=>{
-    gsap.fromTo(title,{
-        opacity:0,
-        x:-300,
-        skewX:65
-    },{
-        opacity:1,
-        x:0,
-        skewX:0,
-        duration:1,
-        delay:1.6,
-        scrollTrigger:title
-    })
-})
-gsap.utils.toArray('.express-logo').forEach(title=>{
-    gsap.fromTo(title,{
-        opacity:0,
-        x:-300,
-        skewX:65
-    },{
-        opacity:1,
-        x:0,
-        skewX:0,
-        duration:1,
-        delay:0.9,
-        scrollTrigger:title
-    })
-})
-gsap.utils.toArray('.prisma-logo02').forEach(title=>{
-    gsap.fromTo(title,{
-        opacity:0,
-        x:-300,
-        skewX:65
-    },{
-        opacity:1,
-        x:0,
-        skewX:0,
-        duration:1,
-        delay:0.9,
-        scrollTrigger:title
-    })
-})
-gsap.utils.toArray('.apprunner-logo').forEach(title=>{
-    gsap.fromTo(title,{
-        opacity:0,
-        x:-300,
-        skewX:65
-    },{
-        opacity:1,
-        x:0,
-        skewX:0,
-        duration:1,
-        delay:1.4,
-        scrollTrigger:title
-    })
-})
+const logosData = [
+    { selector: '.React-logo', delay: 0.5 },
+    { selector: '.Typescript-logo', delay: 0.7 },
+    { selector: '.Firebase-logo', delay: 0.9 },
+    { selector: '.AWS-logo', delay: 1.1 },
+    { selector: '.AWS-amplify-logo', delay: 1.15 },
+    { selector: '.materialui-logo', delay: 1.2 },
+
+    { selector: '.nodejs-logo', delay: 1.0 },
+    { selector: '.Express-logo', delay: 1.2 },
+    { selector: '.mongo-logo', delay: 1.4 },
+    { selector: '.render-logo', delay: 1.6 },
+    { selector: '.postman-logo', delay: 1.8 },
+
+    { selector: '.next-logo', delay: 0.5 },
+    { selector: '.prisma-logo', delay: 0.9 },
+    { selector: '.nextauth-logo', delay: 1.0 },
+    { selector: '.microcms-logo', delay: 1.2 },
+    { selector: '.stripe-logo', delay: 1.4 },
+    { selector: '.vercel-logo', delay: 1.6 },
+
+    { selector: '.cloudflont-logo', delay: 0.9 },
+    { selector: '.s3-logo', delay: 1.2 },
+    { selector: '.github-actions-logo', delay: 1.4 },
+    { selector: '.microcms-logo02', delay: 1.6 },
+
+    { selector: '.express-logo', delay: 0.9 },
+    { selector: '.prisma-logo02', delay: 0.9 },
+    { selector: '.apprunner-logo', delay: 1.4 }
+  ];
+  
+  logosData.forEach(({ selector, delay }) => {
+    gsap.utils.toArray(selector).forEach(title => {
+      gsap.fromTo(title, {
+        opacity: 0,
+        x: -300,
+        skewX: 65
+      }, {
+        opacity: 1,
+        x: 0,
+        skewX: 0,
+        duration: 1,
+        delay,
+        scrollTrigger: title
+      });
+    });
+  });
+  
+
 gsap.utils.toArray('.title-right').forEach(title=>{
     gsap.fromTo(title,{
         letterSpacing:'10px',
