@@ -166,54 +166,43 @@ gsap.utils.toArray('.title-right').forEach(title=>{
         scrollTrigger:title
     })
 })
-gsap.utils.toArray('.img-right01').forEach(img=>{
-    gsap.fromTo(img,{
-        opacity:0,
-        x:300,
-    },{
-        opacity:1,
-        x:0,
-        duration:1.0,
-        delay:.5,
-        scrollTrigger:".img-right01"
-    })
-})
-gsap.utils.toArray('.img-right02').forEach(img=>{
-    gsap.fromTo(img,{
-        opacity:0,
-        x:300,
-    },{
-        opacity:1,
-        x:0,
-        duration:1.0,
-        delay:.5,
-        scrollTrigger:".img-right02"
-    })
-})
-gsap.utils.toArray('.img-right03').forEach(img=>{
-    gsap.fromTo(img,{
-        opacity:0,
-        x:300,
-    },{
-        opacity:1,
-        x:0,
-        duration:1.0,
-        delay:.5,
-        scrollTrigger:".img-right03"
-    })
-})
-gsap.utils.toArray('.img-right04').forEach(img=>{
-    gsap.fromTo(img,{
-        opacity:0,
-        x:300,
-    },{
-        opacity:1,
-        x:0,
-        duration:1.0,
-        delay:.5,
-        scrollTrigger:".img-right04"
-    })
-})
+
+// ループを使用して画像をフェードインさせる関数
+function fadeInImages(selectors) {
+    selectors.forEach(selector => {
+        gsap.utils.toArray(selector).forEach(img => {
+            gsap.fromTo(img, {
+                opacity: 0,
+                x: 300,
+            }, {
+                opacity: 1,
+                x: 0,
+                duration: 1.0,
+                delay: 0.5,
+                scrollTrigger: selector,
+            });
+        });
+    });
+}
+
+// 画像のセレクターを配列で指定
+const selectors = [
+    '.img-right01',
+    '.img-right02',
+    '.img-right03',
+    '.img-right04',
+    '.img-right05'
+];
+
+// フェードインを実行
+fadeInImages(selectors);
+
+
+
+
+
+
+
 
 
 
