@@ -375,6 +375,10 @@ a:hover {
   padding: 7rem 10rem 1rem;
 }
 
+.comment {
+  font-size: 1rem;
+}
+
 .main-content {
   display: flex;
   justify-content: center;
@@ -461,7 +465,7 @@ a:hover {
 }
 
 .render-logo {
-  width: 200px;
+  width: 188px;
   margin: 45px 0;
 }
 
